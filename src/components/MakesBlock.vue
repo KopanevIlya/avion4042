@@ -71,4 +71,24 @@ name: "ManesBlock"
   margin-left: 86px;
 }
 
+.block-cards section {
+  width: 270px;
+  height: 124px;
+  margin-right: 70px;
+}
+
+.block-cards section h1 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.block-cards section span {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
 </style>
