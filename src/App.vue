@@ -11,18 +11,20 @@
       <router-link to="/">Cutlery</router-link> 
     </nav>
     <FirstBlock/>
+    <MakesBlock/>
   </div>
 </template>
 
 <script>
 import HeaderTop from './components/HeaderTop.vue';
 import FirstBlock from './components/FirstBlock.vue';
+import MakesBlock from './components/MakesBlock.vue';
 
 
 export default{
   name:"App",
   components: {
-    HeaderTop, FirstBlock
+    HeaderTop, FirstBlock, MakesBlock
   }
 }
 </script>
