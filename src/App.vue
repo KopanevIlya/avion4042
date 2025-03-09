@@ -5,28 +5,33 @@
       <router-link to="/">Plant pots</router-link> 
       <router-link to="/about">Ceramics</router-link> 
       <router-link to="/">Tables</router-link> 
-      <router-link to="/">Chairs</router-link> 
+      <router-link to="/ProductView">Chairs</router-link>
+      <!-- <router-view>Chairs</router-view> -->
       <router-link to="/">Crockery</router-link> 
       <router-link to="/">Tableware</router-link> 
-      <router-link to="/">Cutlery</router-link> 
-    </nav>
-    <FirstBlock/>
+      <router-link to="/">Cutlery</router-link>     
+    </nav>   
+    
+    <!-- <FirstBlock/>
     <MakesBlock/>
-    <FooterBlock/>
+    <FooterBlock/> -->
+
   </div>
+  <router-view/>
 </template>
 
 <script>
 import HeaderTop from './components/HeaderTop.vue';
-import FirstBlock from './components/FirstBlock.vue';
-import MakesBlock from './components/MakesBlock.vue';
-import FooterBlock from './components/FooterBlock.vue';
+// import FirstBlock from './components/FirstBlock.vue';
+// import MakesBlock from './components/MakesBlock.vue';
+// import FooterBlock from './components/FooterBlock.vue';
+
 
 
 export default{
   name:"App",
   components: {
-    HeaderTop, FirstBlock, MakesBlock,FooterBlock
+     HeaderTop //FirstBlock, MakesBlock,FooterBlock
   }
 }
 </script>
@@ -56,8 +61,12 @@ table{border-collapse:collapse;border-spacing:0}
 }
 
 .nav-list {
+  width: 803px;
+  height: 64px;
+  margin-left: 318px;
+  margin-top: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .nav-list a {
